@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "499827163686",
+    "firebase_url": "https://iscon-37ea4.firebaseio.com",
+    "project_id": "iscon-37ea4",
+    "storage_bucket": "iscon-37ea4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499827163686:android:9a78c2d554ce5afb001ce7",
+        "android_client_info": {
+          "package_name": "shatter.kedia.iscon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499827163686-cp9295p3l7k0qkrqm4ubq5pcsuccgdt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWbDmLdjPZIAXWA7p9ma2SJ8bxOusBzoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499827163686-cp9295p3l7k0qkrqm4ubq5pcsuccgdt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
