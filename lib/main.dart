@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './Login.dart';
+import './available_guides.dart';
 
 void main()
 {
@@ -15,7 +16,8 @@ class _LogState extends State<Log> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      home: Login(),
+      home: Homepage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
