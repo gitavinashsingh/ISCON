@@ -5,7 +5,6 @@ import 'package:iscon/GuideList.dart';
 import './Login.dart';
 import './FolkDetails.dart';
 
-
 class Homepage extends StatefulWidget {
   @override
   _HomepageState createState() => _HomepageState();
@@ -35,18 +34,18 @@ class _HomepageState extends State<Homepage> {
               title: Text('GUIDES'),
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => GuideList()
-                ),);
-                },
+                  context,
+                  MaterialPageRoute(builder: (context) => GuideList()),
+                );
+              },
             ),
             ListTile(
               title: Text('Login Page'),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => FolkDetails()
-                  ),);
+                  MaterialPageRoute(builder: (context) => FolkDetails()),
+                );
               },
             ),
           ],
@@ -75,13 +74,10 @@ class _HomepageState extends State<Homepage> {
           Padding(padding: EdgeInsets.only(top: 50.0)),
           FlatButton(
             child: Text("ADDRESS"),
-            onPressed: (){
-
-            },
+            onPressed: () {},
           ),
-        Text("Hare Krishna Hill, Chord Rd, \nRajajinagar, Bengaluru, \n"
-            "Karnataka 560010")
-
+          Text("Hare Krishna Hill, Chord Rd, \nRajajinagar, Bengaluru, \n"
+              "Karnataka 560010")
         ],
       )),
     );
