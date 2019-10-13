@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:iscon/FormPage.dart';
 import './available_guides.dart';
 
 final FirebaseAuth auth = FirebaseAuth.instance;
@@ -13,6 +14,8 @@ class _LoginState extends State<Login> {
   final email = TextEditingController();
   final password = TextEditingController();
 
+
+
   subtract() async {
     print(email.text);
     print(password.text);
@@ -24,7 +27,7 @@ class _LoginState extends State<Login> {
     if (userId != null) {
       Navigator.of(context)
           .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-        return new Homepage();
+        return new FormPage();
       }));
     } else {
       print("not signed up");
@@ -34,7 +37,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+        resizeToAvoidBottomPadding: false,
+      appBar: AppBar(
+
+        title: Text("Login"),
+
+      ),
         body: new Container(
+            padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0, bottom: 20.0),
             child: new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -43,13 +53,17 @@ class _LoginState extends State<Login> {
                     child: new TextField(
                         controller: email,
                         decoration: new InputDecoration(labelText: 'Email')),
+
                   ),
                   new Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                    child: new TextField(
+                    child: new TextFormField(
                         controller: password,
                         obscureText: true,
                         decoration: new InputDecoration(labelText: 'Password')),
+
+
+
                   ),
                   new Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -71,12 +85,13 @@ class _LoginState extends State<Login> {
                           child: Padding(
                             padding: const EdgeInsets.only(
                                 left: 10.0, right: 20.0, top: 10.0),
-                            child: new Container(
-                                alignment: Alignment.center,
-                                height: 60.0,
-                                child: new Text("Forgot Password?",
-                                    style: new TextStyle(
-                                        fontSize: 17.0, color: Color(0xFF18D191)))),
+                            child: RaisedButton(
+                              padding: const EdgeInsets.all(8.0),
+                              textColor: Colors.white,
+                              color: Color(0xFF18D191),
+                              onPressed: subtract,
+                              child: new Text("Forgot Password"),
+                            ),
                           ),
                         )
                       ]),
