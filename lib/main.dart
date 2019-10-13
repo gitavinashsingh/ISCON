@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import './Login.dart';
 import './available_guides.dart';
 
-void main()
-{
+void main() {
   runApp(Log());
 }
 
@@ -17,6 +16,10 @@ class _LogState extends State<Log> {
   Widget build(BuildContext context) {
     return new MaterialApp(
       home: Homepage(),
+      theme: ThemeData(
+          brightness: Brightness.dark,
+          primaryColor: Colors.indigo,
+          accentColor: Colors.indigoAccent),
       debugShowCheckedModeBanner: false,
     );
   }
