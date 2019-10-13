@@ -1,9 +1,15 @@
 //https://medium.com/@atul.sharma_94062/how-to-use-cloud-firestore-with-flutter-e6f9e8821b27
 
+//https://medium.com/@atul.sharma_94062/how-to-use-cloud-firestore-with-flutter-e6f9e8821b27
+
 import 'package:flutter/material.dart';
 import 'package:iscon/GuideList.dart';
 import './Login.dart';
+<<<<<<< HEAD
 import './FolkDetails.dart';
+=======
+import './FormPage.dart';
+>>>>>>> 7f6a1e94f31d617c0f36ddc6baea9c75b73e9eea
 
 class Homepage extends StatefulWidget {
   @override
@@ -18,6 +24,7 @@ class _HomepageState extends State<Homepage> {
       appBar: new AppBar(
         backgroundColor: Colors.indigo,
         title: Text("ISKCON BENGALURU"),
+<<<<<<< HEAD
       ),
       drawer: Drawer(
         child: ListView(
@@ -50,6 +57,8 @@ class _HomepageState extends State<Homepage> {
             ),
           ],
         ),
+=======
+>>>>>>> 7f6a1e94f31d617c0f36ddc6baea9c75b73e9eea
       ),
       body: new Container(
           child: new Column(

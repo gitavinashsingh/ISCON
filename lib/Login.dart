@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:iscon/GuideDetails.dart';
-import './FolkDetails.dart';
+import './FolkDetails.dart
+import 'package:iscon/FormPage.dart';
 import './available_guides.dart';
 
 final FirebaseAuth auth = FirebaseAuth.instance;
@@ -29,6 +30,7 @@ class _LoginState extends State<Login> {
       Navigator.of(context)
           .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
         return  FolkDetails();
+        return new FormPage();
       }));
     } else {
       print("not signed up");
